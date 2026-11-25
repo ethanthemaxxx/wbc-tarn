@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spending — Tarn</title>
+<meta name="description" content="See where your money went and why. Tarn sorts every purchase, flags the odd ones and answers questions about any month.">
+<meta name="theme-color" content="#0e1011">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spending — Tarn">
+<meta property="og:description" content="See where your money went and why. Tarn sorts every purchase, flags the odd ones and answers questions about any month.">
+<meta property="og:image" content="https://tarn.wolfbc.art/assets/og.jpg">
+<meta property="og:url" content="https://tarn.wolfbc.art/spending/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<script>document.documentElement.classList.add("js");try{if(localStorage.getItem("tarn-still")==="1")document.documentElement.classList.add("is-still")}catch(e){}</script>
+</head>
+<body class="inner">
+<a class="skip" href="#main">Skip to content</a>
+<button class="skip skip--motion motion-toggle" type="button" aria-pressed="false">Pause motion</button>
+<header class="nav">
+  <a class="nav__logo" href="../" aria-label="Tarn, home"><svg class="logo-mark" viewBox="0 0 74 24" height="24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 4.5h14M10 4.5v11"/><path d="M1.5 19.5c2.2-2 4.2-2 6.3 0s4.2 2 6.3 0 4.1-2 6.3 0"/></g><text x="26" y="17" fill="currentColor" font-family="Newsreader, Georgia, serif" font-size="20" font-weight="300" letter-spacing="-0.3">tarn</text></svg></a>
+  <nav class="nav__links" aria-label="Main">
+    <div class="dd">
+      <button class="pill" type="button" aria-expanded="false" aria-controls="dd-product">Product <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="dd__panel" id="dd-product"><a href="../spending/">Spending</a><a href="../#features">Net worth</a><a href="../#features">Investments</a><a href="../#features">Debt payoff</a><a href="../#together">Together</a></div>
+    </div>
+    <a class="pill" href="../pricing/">Pricing</a>
+    <a class="pill" href="../about/">About</a>
+  </nav>
+  <div class="nav__right">
+    <button class="nav__login" type="button" data-notice="Tarn is a concept, so there are no accounts to log in to.">Log in</button>
+    <a class="btn btn--white" href="../pricing/">Start free <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mnav" id="mnav">
+    <button type="button" aria-expanded="false" aria-controls="mnav-sub">Product <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+    <div class="mnav__sub" id="mnav-sub"><a href="../spending/">Spending</a><a href="../#features">Net worth</a><a href="../#features">Investments</a><a href="../#features">Debt payoff</a><a href="../#together">Together</a></div>
+    <a href="../pricing/">Pricing</a>
+    <a href="../about/">About</a>
+    <button type="button" data-notice="Tarn is a concept, so there are no accounts to log in to.">Log in</button>
+  </div>
+</header>
+<main id="main">
+<section class="ihero" aria-labelledby="sp-h1">
+  <img src="../assets/spending-saltflat.webp" width="2400" height="1340" fetchpriority="high" alt="A mirror-flat salt pan reflecting a pale pink and blue sky, the horizon almost invisible.">
+  <h1 class="display" id="sp-h1">Know where it went,<br>and why.</h1>
+  <form class="ask-field" data-answer="Travel added $420 and two yearly renewals landed in the same week.">
+    <label class="sr-only" for="sp-q">Ask about any month, store or habit</label>
+    <input id="sp-q" type="text" placeholder="Ask about any month, store or habit" data-typed="Why was March so expensive?" autocomplete="off">
+    <button type="submit" aria-label="Send question"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+  </form>
+  <p class="ask-field__ans" role="status" aria-live="polite"></p>
+  <p class="lead">Tarn sorts every purchase and answers in plain words, so you see the reason and not just the total.</p>
+</section>
+<section class="sec" aria-label="What Tarn does with your spending">
+  <div class="mosaic"><article class="mtile"><h2>Every purchase, sorted</h2><p>Tarn tags each transaction on its own and learns from your fixes.</p><div class="ui" aria-hidden="true"><div class="ui__label"><span>Today</span><span>4 new</span></div><div class="ui__rows" style="margin-top:8px">
+<div class="ui__row"><span class="ui__name"><span class="av" style="background:#1f3a33">G</span>Groceries</span><span class="tag tag--teal">Groceries</span></div>
+<div class="ui__row"><span class="ui__name"><span class="av" style="background:#3b2a1f">C</span>Coffee</span><span class="tag tag--gold">Coffee</span></div>
+<div class="ui__row"><span class="ui__name"><span class="av" style="background:#2b2f3a">F</span>Fuel</span><span class="tag">Fuel</span></div></div>
+<div style="margin-top:12px"><span class="tag" style="height:32px;padding:0 14px">Fix category</span></div></div></article><article class="mtile"><h2>Odd charges, flagged</h2><p>A double charge or a new merchant gets a note the same day.</p><div class="ui" aria-hidden="true"><div class="ui__label"><span class="tag tag--ember"><span class="pulse pulse--ember"></span>Charged twice</span><span>Today</span></div>
+<div class="ui__big tnum">$64.20</div><div class="ui__rows" style="margin-top:8px"><div class="ui__row"><span>Card ···3158 · 9:14</span><span class="tnum">$64.20</span></div><div class="ui__row"><span>Card ···3158 · 9:15</span><span class="tnum">$64.20</span></div></div>
+<div style="margin-top:12px"><span class="tag tag--teal" style="height:32px;padding:0 14px">Ask for refund</span></div></div></article><article class="mtile"><h2>Subscriptions in one list</h2><p>See what you pay each month and what renews next.</p><div class="ui" aria-hidden="true"><div class="ui__label"><span>Monthly total $87.40</span><span>7 active</span></div><div class="ui__rows" style="margin-top:8px">
+<div class="ui__row"><span class="ui__name"><span class="av" style="background:#3b2a1f">N</span>Northlight Video</span><span class="tnum">$15.99</span></div>
+<div class="ui__row"><span class="ui__name"><span class="av" style="background:#1f3a33">P</span>Pinecone Music</span><span class="tnum">$10.99</span></div>
+<div class="ui__row"><span class="ui__name"><span class="av" style="background:#2b2f3a">D</span>Daybreak News</span><span class="tnum">$8.00</span></div></div>
+<div style="margin-top:12px"><span class="tag tag--gold" style="height:32px;padding:0 14px">Next: Fri</span></div></div></article><article class="mtile"><h2>Month against month</h2><p>Compare groceries, travel or rent with any earlier month.</p><div class="ui" aria-hidden="true"><div class="ui__label"><span>Month against month</span></div>
+<div class="ui__rows" style="margin-top:8px"><div class="ui__row" style="display:block"><div style="display:flex;justify-content:space-between"><span>Feb</span><span class="tnum">$1,920</span></div><div class="ui__bar"><i style="width:82%;background:rgba(255,255,255,.5)"></i></div></div>
+<div class="ui__row" style="display:block"><div style="display:flex;justify-content:space-between"><span>Mar</span><span class="tnum">$2,340</span></div><div class="ui__bar"><i style="width:100%;background:var(--ember)"></i></div></div></div>
+<div style="margin-top:12px"><span class="tag tag--ember" style="height:32px;padding:0 14px">+$420 travel</span></div></div></article><article class="mtile"><h2>Cash flow, forecast</h2><p>See what lands in your account before the next paycheck.</p><div class="ui" aria-hidden="true"><div class="ui__label"><span>Cash flow</span><span class="tag tag--teal">Payday</span></div>
+<svg class="spark" viewBox="0 0 280 88" preserveAspectRatio="none" aria-hidden="true"><path d="M0 18 L60 30 L110 44 L160 58 L210 70 L240 74 L250 20 L280 22" fill="none" stroke="#35c2a0" stroke-width="2"/><circle cx="250" cy="20" r="4" fill="#35c2a0"/></svg>
+<div class="ui__rows" style="margin-top:6px"><div class="ui__row"><span>Today</span><span class="tnum">$3,240</span></div><div class="ui__row"><span>In 9 days</span><span class="tnum">$1,410</span></div></div></div></article><article class="mtile"><h2>Goals that fit your month</h2><p>Set a target and Tarn shows what it takes each month.</p><div class="ui" aria-hidden="true"><div class="ui__label"><span>Trip fund</span><span class="tag tag--gold">$400 a month</span></div>
+<div class="ui__big tnum">$1,200 <span class="ui__muted" style="font-size:18px">of $2,400</span></div>
+<div class="ui__bar" style="height:8px;margin-top:14px"><i style="width:50%;background:var(--gold)"></i></div></div></article></div>
+  <p class="fict fict--c">Merchants, subscriptions and figures on this page are fictional.</p>
+</section>
+<div class="sec"><div class="days-panel" data-notice-scope>
+    <h2 class="display" id="days-h">The week your<br>subscriptions renew</h2>
+    <p class="lead">Seven small charges, seven dates. Tarn lists them so none surprise you.</p>
+    <section class="keep row-wrap" aria-labelledby="days-h"><div class="row-sec days"><article class="day"><span class="mono">Mon</span><span class="av" style="background:#3b2a1f" aria-hidden="true">N</span><b>Northlight Video</b><span class="amt tnum">$15.99</span><button class="btn btn--dark" type="button" aria-label="Review Northlight Video" data-notice="Tarn is a concept, so there is no subscription to review.">Review</button></article><article class="day"><span class="mono">Tue</span><span class="av" style="background:#1f3a33" aria-hidden="true">P</span><b>Pinecone Music</b><span class="amt tnum">$10.99</span><button class="btn btn--dark" type="button" aria-label="Review Pinecone Music" data-notice="Tarn is a concept, so there is no subscription to review.">Review</button></article><article class="day"><span class="mono">Wed</span><span class="av" style="background:#2b2f3a" aria-hidden="true">F</span><b>Fieldnote Cloud</b><span class="amt tnum">$2.99</span><button class="btn btn--dark" type="button" aria-label="Review Fieldnote Cloud" data-notice="Tarn is a concept, so there is no subscription to review.">Review</button></article><article class="day"><span class="mono">Thu</span><span class="av" style="background:#3a2230" aria-hidden="true">C</span><b>Cairn Fitness</b><span class="amt tnum">$29.00</span><button class="btn btn--dark" type="button" aria-label="Review Cairn Fitness" data-notice="Tarn is a concept, so there is no subscription to review.">Review</button></article><article class="day"><span class="mono">Fri</span><span class="av" style="background:#3a3420" aria-hidden="true">D</span><b>Daybreak News</b><span class="amt tnum">$8.00</span><button class="btn btn--dark" type="button" aria-label="Review Daybreak News" data-notice="Tarn is a concept, so there is no subscription to review.">Review</button></article><article class="day"><span class="mono">Sat</span><span class="av" style="background:#22361f" aria-hidden="true">M</span><b>Mossgrove Meals</b><span class="amt tnum">$64.50</span><button class="btn btn--dark" type="button" aria-label="Review Mossgrove Meals" data-notice="Tarn is a concept, so there is no subscription to review.">Review</button></article><article class="day"><span class="mono">Sun</span><span class="av" style="background:#202c3a" aria-hidden="true">K</span><b>Kettle Learn</b><span class="amt tnum">$9.99</span><button class="btn btn--dark" type="button" aria-label="Review Kettle Learn" data-notice="Tarn is a concept, so there is no subscription to review.">Review</button></article></div></section>
+    <p class="days__notice notice-msg" role="status"></p>
+</div></div>
+<section class="intro" aria-labelledby="bud-h">
+  <h2 class="display h-sec" id="bud-h">A budget that<br>bends with your month</h2>
+  <p class="lead">Set a limit once. Tarn shows how much is left and warns you before you pass it.</p>
+</section>
+<div class="sec">
+  <div class="budget">
+    <div class="mtile" style="min-height:520px"><div class="ui" style="margin-top:0;max-width:420px" role="img" aria-label="Spending by category: Rent, Groceries, Eating out, Transport, Fun, Savings. Eating out is near its limit.">
+      <div class="ui__label"><span>This month by category</span></div>
+      <div class="bars" aria-hidden="true"><i class="cool" style="height:92%"></i><i class="" style="height:70%"></i><i class="hot" style="height:96%"></i><i class="" style="height:40%"></i><i class="" style="height:55%"></i><i class="cool" style="height:80%"></i></div><div class="bars-lab" aria-hidden="true"><span>Rent</span><span>Groceries</span><span>Eating out</span><span>Transport</span><span>Fun</span><span>Savings</span></div>
+      <p class="warn" aria-hidden="true"><span class="pulse pulse--ember"></span>Eating out is near its limit.</p></div></div>
+    <div class="mtile" style="min-height:520px;justify-content:center"><div class="gauge" role="img" aria-label="74% of budget used" style="transform:scale(1.3);margin:40px 0">
+      <svg viewBox="0 0 181 148" aria-hidden="true"><path d="M30 128 A72 72 0 1 1 151 128" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M30 128 A72 72 0 1 1 151 128" fill="none" stroke="#f0c162" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="74 100"/></svg>
+      <span class="gauge__val">74%</span><span class="gauge__lab" style="color:var(--t80)">of budget used</span></div>
+      <p class="ui__big tnum" style="font-size:28px">$1,240 left this month</p></div>
+  </div>
+</div>
+<section class="intro" aria-labelledby="ans-h">
+  <div class="spark-ico" style="margin-bottom:32px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2c.6 4.8 2.7 7.4 8 8.5v1c-5.3 1.1-7.4 3.7-8 8.5h-1c-.6-4.8-2.7-7.4-8-8.5v-1c5.3-1.1 7.4-3.7 8-8.5z" fill="currentColor" stroke="none"/></svg></div>
+  <h2 class="display h-sec" id="ans-h">Ask in your own words</h2>
+</section>
+<div class="sec"><div class="answers"><article class="acard"><p class="mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2c.6 4.8 2.7 7.4 8 8.5v1c-5.3 1.1-7.4 3.7-8 8.5h-1c-.6-4.8-2.7-7.4-8-8.5v-1c5.3-1.1 7.4-3.7 8-8.5z" fill="currentColor" stroke="none"/></svg>Ask Tarn</p><h3>Why did spending rise in March?</h3><p>Travel added $420 and two yearly renewals landed in the same week.</p></article><article class="acard"><p class="mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2c.6 4.8 2.7 7.4 8 8.5v1c-5.3 1.1-7.4 3.7-8 8.5h-1c-.6-4.8-2.7-7.4-8-8.5v-1c5.3-1.1 7.4-3.7 8-8.5z" fill="currentColor" stroke="none"/></svg>Ask Tarn</p><h3>Can I cancel anything?</h3><p>Three subscriptions went unused for 60 days. Together they cost $41 a month.</p></article><article class="acard"><p class="mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2c.6 4.8 2.7 7.4 8 8.5v1c-5.3 1.1-7.4 3.7-8 8.5h-1c-.6-4.8-2.7-7.4-8-8.5v-1c5.3-1.1 7.4-3.7 8-8.5z" fill="currentColor" stroke="none"/></svg>Ask Tarn</p><h3>What can I spend this weekend?</h3><p>About $180, and you'd still reach your savings goal.</p></article></div></div>
+<div style="height:120px"></div>
+<section class="sec" id="sp-faq" aria-labelledby="sp-faq-h">
+  <div class="faq">
+    <h2 class="display" id="sp-faq-h">Questions, answered</h2>
+    <div class="faq__list"><details><summary>Does Tarn sort my spending automatically? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary><p>Yes. Each transaction gets a category as it arrives. If one is wrong, change it once and Tarn applies the fix to similar purchases.</p></details><details><summary>How does Tarn find my subscriptions? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary><p>It looks for charges that repeat on a pattern, such as the same merchant and amount each month, and lists them with the next renewal date.</p></details><details><summary>Can I set my own categories? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary><p>Yes. Rename, merge or add categories, and Tarn will use yours from then on.</p></details><details><summary>Does anyone else see my spending? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary><p>No. Tarn reads your accounts to help you and doesn't sell your data. On a Household plan, your partner sees only what you choose to share.</p></details></div>
+  </div>
+</section>
+
+<section class="inner-cta" aria-labelledby="spc-h">
+  <h2 class="display" id="spc-h">See your month<br>in one sentence.</h2>
+  <a class="btn btn--white" href="../pricing/">Start free <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div class="footer__news" id="letter">
+        <h2 class="footer__title">The Tarn letter</h2>
+        <p>One calm email a month. What changed, what to watch, one thing to do.</p>
+        <form class="news" aria-label="The Tarn letter" novalidate data-ok="Thanks. Your first letter arrives next month." data-err="Enter a valid email, like name@example.com.">
+          <label class="sr-only" for="news-email">Your email</label>
+          <input id="news-email" type="email" name="email" placeholder="Your email" autocomplete="email" aria-describedby="news-msg">
+          <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </form>
+        <p class="news__msg" id="news-msg" role="status" aria-live="polite"></p>
+      </div>
+      <div class="fcol"><h2 class="footer__title">Product</h2><ul><li><a href="../spending/">Spending</a></li><li><span class="fcol__off">Net worth</span></li><li><span class="fcol__off">Investments</span></li><li><span class="fcol__off">Debt payoff</span></li><li><span class="fcol__off">Ask Tarn</span></li></ul></div><div class="fcol"><h2 class="footer__title">Company</h2><ul><li><a href="../about/">About</a></li><li><a href="../pricing/">Pricing</a></li><li><a href="../about/#join">Join us</a></li><li><span class="fcol__off">Press kit</span></li></ul></div><div class="fcol"><h2 class="footer__title">Resources</h2><ul><li><span class="fcol__off">Help center</span></li><li><span class="fcol__off">Security</span></li><li><span class="fcol__off">The Tarn letter</span></li><li><span class="fcol__off">Contact</span></li></ul></div>
+      <div class="fapp" data-notice-scope>
+        <h2 class="footer__title">Get the app</h2>
+        <div class="fapp__row">
+          <button class="fbtn" type="button" data-notice="Tarn is a concept, so there is no app to download yet."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg> iOS app</button>
+          <button class="fbtn" type="button" data-notice="Tarn is a concept, so there is no app to download yet."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 10h14v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M7 10a5 5 0 0 1 10 0"/><path d="M9.5 6.5L8 4.5M14.5 6.5L16 4.5"/></svg> Android app</button>
+        </div>
+        <p class="fapp__notice notice-msg" role="status"></p>
+        <div class="flinks"><button type="button" data-notice="Tarn is a concept, so there are no accounts to log in to.">Log in</button><a href="../pricing/">Start free</a><button class="motion-toggle" type="button" aria-pressed="false">Pause motion</button></div>
+      </div>
+    </div>
+    <a class="footer__brand" href="../" aria-label="Tarn, home"><svg class="logo-mark" viewBox="0 0 74 24" height="25" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 4.5h14M10 4.5v11"/><path d="M1.5 19.5c2.2-2 4.2-2 6.3 0s4.2 2 6.3 0 4.1-2 6.3 0"/></g><text x="26" y="17" fill="currentColor" font-family="Newsreader, Georgia, serif" font-size="20" font-weight="300" letter-spacing="-0.3">tarn</text></svg></a>
+    <div class="legal">
+      <p>Tarn is a concept project made for a design portfolio. It is not a real company and not a real financial service. No app, account or product exists, and nothing on this site can be bought or downloaded.</p><p>Nothing here is investment, tax, legal or financial advice, and nothing here is an offer or a recommendation to buy or sell anything. Do not make financial decisions based on this site.</p><p>The people, testimonials, banks, brokers, investors, subscriptions and numbers shown are fictional and for illustration only. Any resemblance to real companies or people is a coincidence.</p><p>Past or projected results shown in examples are not a promise of future results. Investing involves risk, including loss of principal.</p><p>© 2026 Tarn concept. All rights reserved.</p>
+      <p class="credit">Concept project by Wolfgang Betancourth — <a href="https://wolfbc.art">wolfbc.art</a></p>
+    </div>
+  </div>
+</footer>
+<p class="notice notice-msg" id="notice" role="status"></p>
+<script src="../js/site.js" defer></script>
+</body>
+</html>
